@@ -39,7 +39,7 @@ require_once("home.php"); ?>
                         <button type="submit" class="btn-lg btn-block  btn-dark">
                             Sign Up
                         </button>
-                        <small class="text-right d-block">Already registred <a href="/login">login?</a></small>
+                        <small class="text-right d-block">Already registred <a href="../view/login.php">login?</a></small>
                     </div>
                 </div>
             </div>

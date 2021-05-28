@@ -1,0 +1,7 @@
+.rounded-lg {
+  border-radius: 16px !important;
+}
+
+body {
+  background: rgba(37, 85, 254, 255);
+}

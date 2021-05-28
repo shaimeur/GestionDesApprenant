@@ -18,7 +18,7 @@ require_once("home.php"); ?>
             <div class="form-group row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="exampleInputFullname1">Full Name</label>
+                        <label for="exampleInputFullname1"> Usename</label>
                         <input type="text" class="form-control form-control-lg" id="exampleInputFullname1" aria-describedby="FullnameHelp" />
                     </div>
                 </div>
@@ -36,7 +36,7 @@ require_once("home.php"); ?>
                 </div>
                 <div class="col-12">
                     <div class="form-group ">
-                        <button type="submit" class="btn-lg btn-block  btn-dark">
+                        <button type="submit" name="submit" class="btn-lg btn-block  btn-dark">
                             Sign Up
                         </button>
                         <small class="text-right d-block">Already registred <a href="../view/login.php">login?</a></small>

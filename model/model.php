@@ -1,10 +1,23 @@
 <?php
-function dbConnect()
+
+require_once("../model/Manager.php");
+
+
+class Model extends Manager
 {
-    try {
-        $db = new PDO('mysql:host=localhost;dbname=gestion;charset=utf8', 'root', '');
-        return $db;
-    } catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
+
+    public function signup()
+    {
+        $db = $this->dbConnect();
+
+        $req = $db->prepare("INSERT INTO users(`userName`,`email`,`password`) VALUES (:userNme,:email,:password)");
+        // $req = bindParam(':userName', $_POST['userName'], PDO::PARAM_STR);
+        // $req = bindParam(':password', $_POST['password'], PDO::PARAM_STR);
+        // $req = bindParam(':email', $_POST['email'], PDO::PARAM_STR);
+        if ($req->execute()) {
+            return true;
+        } else {
+            false;
+        }
     }
 }

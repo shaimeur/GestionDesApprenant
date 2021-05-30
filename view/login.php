@@ -20,18 +20,18 @@ require_once("home.php"); ?>
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" />
+                        <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" />
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-group ">
-                        <button type="submit" class="btn-lg btn-block  btn-dark">
+                        <button type="submit" name="submit" class="btn-lg btn-block  btn-dark">
                             Login
                         </button>
 

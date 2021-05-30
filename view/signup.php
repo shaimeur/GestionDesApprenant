@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-require_once("home.php"); ?>
+// require_once("home.php"); 
+?>
 <html lang="en">
 
 <head>
@@ -31,7 +32,7 @@ require_once("home.php"); ?>
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" />
+                        <input type="password" name class="form-control form-control-lg" id="exampleInputPassword1" />
                     </div>
                 </div>
                 <div class="col-12">

@@ -12,10 +12,20 @@ class Controller
     public function invoke()
     {
         $result = $this->model->signup();
-        if ($result == true) {
-            include './view/login.php';
+        if ($result) {
+            require('./view/login.php');
+            // print_r($_POST);
         } else {
-            echo '  A Tebi!!';
+            echo '  Erreur signup!!';
+        }
+    }
+    public function loginfo()
+    {
+        $result = $this->model->login();
+        if ($result) {
+            require('./view/dashbord.php');
+        } else {
+            echo 'Erreur de login !';
         }
     }
 }

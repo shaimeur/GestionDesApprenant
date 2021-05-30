@@ -14,7 +14,7 @@ require_once("home.php"); ?>
 <body>
     <div class="container bg-white w-25 p-5 rounded-lg shadow-lg" style="font-size: 20px">
         <h2 class="text-center ">Sign Up</h2>
-        <form>
+        <form action="/signup" method="post">
             <div class="form-group row">
                 <div class="col-12">
                     <div class="form-group">

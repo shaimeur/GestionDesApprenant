@@ -1,5 +1,5 @@
 <?php
-require_once("../model/Model.php");
+require_once("model/Model.php");
 
 class Controller
 {
@@ -13,8 +13,8 @@ class Controller
     {
         $result = $this->model->signup();
         if ($result)
-            true;
+            include 'view/login.php';
         else
-            false;
+            echo 'Erreur Broo !!';
     }
 }

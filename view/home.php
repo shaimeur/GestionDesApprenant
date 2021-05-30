@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar shadow bg-white col-12 mb-5">
-                    <a class="navbar-brand" href="../view/home.php">Youcode Youssofia</a>
+                    <a class="navbar-brand" href="../view/home.php">YouCode</a>
                     <div>
                         <a href="../view/login.php">
                             <button type="button" class="btn btn-outline-primary mr-3">

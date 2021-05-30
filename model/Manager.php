@@ -1,11 +1,11 @@
 <?php
 class Manager
 {
-    protected function dbConnect()
+    protected $db;
+    public function __construct()
     {
         try {
-            $db = new PDO('mysql:host=localhost;dbname=gestion;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-            return $db;
+            $this->db = new PDO('mysql:host=localhost;dbname=gestion;charset=utf8', 'root', '',  array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
         } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
         }

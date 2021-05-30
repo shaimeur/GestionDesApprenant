@@ -12,7 +12,7 @@ class Controller
     public function invoke()
     {
         $result = $this->model->signup();
-        if (!$result == true) {
+        if ($result == true) {
             include './view/login.php';
         } else {
             echo '  A Tebi!!';

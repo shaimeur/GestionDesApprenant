@@ -19,19 +19,19 @@ require_once("home.php"); ?>
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputFullname1"> Usename</label>
-                        <input type="text" class="form-control form-control-lg" id="exampleInputFullname1" aria-describedby="FullnameHelp" />
+                        <input type="text" name="userName" class="form-control form-control-lg" id="exampleInputFullname1" aria-describedby="FullnameHelp" />
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" />
+                        <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" />
                     </div>
                 </div>
                 <div class="col-12">

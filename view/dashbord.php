@@ -15,11 +15,11 @@
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar shadow bg-white col-12 mb-5">
-                    <a class="navbar-brand" href="../view/home.php">YouCode</a>
+                    <a class="navbar-brand" href="/home">YouCode</a>
                     <div>
                         <?php
                         if (isset($_SESSION["canLog"])) { ?>
-                            <a href="../view/apprenant.php">
+                            <a href="/apprenant">
                                 <button type="button" class="btn btn-outline-primary mr-3">
                                     Apprenants
                                 </button>

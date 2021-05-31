@@ -12,7 +12,7 @@ class userModel extends Manager
 
         try {
             $req = $this->db->prepare("INSERT INTO users (`username`,`email`,`password`) VALUES (:username,:email,:password)");
-            $req->bindParam(':userame', $_POST['username'], PDO::PARAM_STR);
+            $req->bindParam(':username', $_POST['username'], PDO::PARAM_STR);
             $req->bindParam(':password', $_POST['password'], PDO::PARAM_STR);
             $req->bindParam(':email', $_POST['email'], PDO::PARAM_STR);
             $req->execute();

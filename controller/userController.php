@@ -49,9 +49,7 @@ class userController
         }
     }
 
-    public function userLogout()
-    {
-    }
+
     public function userResetPassword()
     {
     }

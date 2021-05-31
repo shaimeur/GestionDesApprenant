@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-// require_once("home.php"); 
+require_once("home.php");
 ?>
 <html lang="en">
 
@@ -15,12 +15,12 @@
 <body>
     <div class="container bg-white w-25 p-5 rounded-lg shadow-lg" style="font-size: 20px">
         <h2 class="text-center ">Sign Up</h2>
-        <form action="/signup" method="post">
+        <form action="/signup/add" method="post">
             <div class="form-group row">
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputFullname1"> Usename</label>
-                        <input type="text" name="userName" class="form-control form-control-lg" id="exampleInputFullname1" aria-describedby="FullnameHelp" />
+                        <input type="text" name="username" class="form-control form-control-lg" id="exampleInputFullname1" aria-describedby="FullnameHelp" />
                     </div>
                 </div>
                 <div class="col-12">
@@ -32,7 +32,7 @@
                 <div class="col-12">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name class="form-control form-control-lg" id="exampleInputPassword1" />
+                        <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" />
                     </div>
                 </div>
                 <div class="col-12">
@@ -40,7 +40,7 @@
                         <button type="submit" name="submit" class="btn-lg btn-block  btn-dark">
                             Sign Up
                         </button>
-                        <small class="text-right d-block">Already registred <a href="../view/login.php">login?</a></small>
+                        <small class="text-right d-block">Already registred <a href="/login">login?</a></small>
                     </div>
                 </div>
             </div>

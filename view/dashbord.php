@@ -17,26 +17,26 @@
                 <nav class="navbar shadow bg-white col-12 mb-5">
                     <a class="navbar-brand" href="../view/home.php">YouCode</a>
                     <div>
-                        <a href="../view/apprenant.php">
-                            <button type="button" class="btn btn-outline-primary mr-3">
-                                Apprenants
+                        <?php
+                        if (isset($_SESSION["canLog"])) { ?>
+                            <a href="../view/apprenant.php">
+                                <button type="button" class="btn btn-outline-primary mr-3">
+                                    Apprenants
+                                </button>
+                            </a>
+                            <a href="../view/classe.php">
+                                <button type="button" class="btn btn-outline-primary mr-3">
+                                    Classes
+                                </button>
+                            </a>
+                        <?php };
+                        ?>
+                        <a href="/logout">
+                            <button type="button" class="btn btn-outline-danger mr-3">
+                                Logout
                             </button>
                         </a>
-                        <a href="../view/classe.php">
-                            <button type="button" class="btn btn-outline-primary mr-3">
-                                Classes
-                            </button>
-                        </a>
-                        <a href="../view/login.php">
-                            <button type="button" class="btn btn-outline-primary mr-3">
-                                Login
-                            </button>
-                        </a>
-                        <a href="../view/signup.php">
-                            <button type="button" class="btn btn-outline-primary mr-3">
-                                Signup
-                            </button>
-                        </a>
+
                     </div>
                 </nav>
             </div>
@@ -46,10 +46,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
-
-</html>
-
-
 <style>
     .rounded-lg {
         border-radius: 16px !important;
@@ -59,3 +55,5 @@
         background: rgba(37, 85, 254, 255);
     }
 </style>
+
+</html>

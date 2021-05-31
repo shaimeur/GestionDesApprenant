@@ -15,7 +15,7 @@ require_once("home.php"); ?>
 
     <div class="container bg-white w-25 p-5 rounded-lg shadow-lg" style="font-size: 20px">
         <h2 class="text-center ">Login</h2>
-        <form>
+        <form action="/login/loged" method="POST">
             <div class="form-group row">
                 <div class="col-12">
                     <div class="form-group">
@@ -35,7 +35,7 @@ require_once("home.php"); ?>
                             Login
                         </button>
 
-                        <a class="text-right d-block" href="../view/forgotpassword.php">Forgot password?</a>
+                        <a class="text-right d-block" href="/forgotpassword">Forgot password?</a>
                         <div></div>
                     </div>
                 </div>

@@ -1,14 +1,58 @@
 <?php
-// class userController
-// {
+require_once("./model/usersModel.php");
 
-//     public function login()
-//     {
-//         echo "login method";
-//     }
+class userController
+{
 
-//     public function getHome()
-//     {
-//         return view("home");
-//     }
-// }
+    public $username;
+    public $email;
+    public $password;
+
+
+    public function userSignup()
+    {
+
+        if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password'])) {
+            if (empty($_POST['username']) && empty($_POST['email']) && empty($_POST['password'])) {
+                echo "Enter the right parametre!!";
+            } else {
+                $newUser = new userModel();
+                if ($newUser->creat()) {
+                    require_once "./view/login.php";
+                } else {
+                    echo " Can't create an account!! ";
+                }
+            }
+        } else {
+            echo "DEFAUT INFO";
+        }
+    }
+
+    public function userLogin()
+    {
+        if (isset($_POST['email']) && isset($_POST['password'])) {
+
+            if (empty($_POST['email']) && empty($_POST['password'])) {
+                echo "Enter a valide account";
+            } else {
+                $user = new userModel();
+                $userData = $user->findByEmail($_POST['email']);
+                if ($userData['password'] === $_POST['password']) {
+                    $_SESSION["canLog"] = true;
+                    require_once "./view/dashbord.php";
+                } else {
+                    require_once "./view/login.php";
+                }
+            }
+        } else {
+            echo "ACCOUNT NOT FOUND";
+        }
+    }
+
+    public function userLogout()
+    {
+    }
+    public function userResetPassword()
+    {
+    }
+}

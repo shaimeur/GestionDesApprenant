@@ -1,6 +1,6 @@
 <?php
-if (isset($_GET['url'])) {
-    $url = $_GET['url'];
+if (isset($_SERVER['REQUEST_URI'])) {
+    $url = $_SERVER['REQUEST_URI'];
 } else {
     $url = "/";
 }

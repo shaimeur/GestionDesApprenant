@@ -39,7 +39,7 @@ class userController
                 $userData = $user->findByEmail($_POST['email']);
                 if ($userData['password'] === $_POST['password']) {
                     $_SESSION["canLog"] = true;
-                    require_once "./view/dashbord.php";
+                    require_once "./view/apprenant.php";
                 } else {
                     require_once "./view/login.php";
                 }

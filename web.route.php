@@ -33,6 +33,9 @@ if ($url == "/logout") {
     session_destroy();
     require_once "./view/home.php";
 }
+if ($url == "/completeRegistration") {
+    require_once("./view/apprenant.php");
+}
 
 if ($url == "/forgotpassword") {
     require_once("./view/forgotpassword.php");

@@ -5,8 +5,8 @@ class Manager
 
     private $host = 'localhost';
     private $dbName = 'gestion';
-    private $username = 'root';
-    private $password = '';
+    private $username = 'saad';
+    private $password = 'mysqlserver';
 
     public $db;
 
